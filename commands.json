@@ -1,0 +1,21 @@
+{
+  "/help": {
+    "description": "查看最新能力、命令及文件使用方式"
+  },
+  "/jbfj": {
+    "description": "剧本分集：带目录 PDF＋全集及单集 Word 压缩包",
+    "skills": [
+      "screenplay-episode-processor"
+    ],
+    "kind": "episodes",
+    "task": "直接调用 screenplay-episode-processor 处理原稿，自动完成目录与全集、单集 Word 拆分；无需确认，不做美术资产表。"
+  },
+  "/mscf": {
+    "description": "美术拆分：直接读取剧本生成美术元素统计 Excel",
+    "skills": [
+      "screenplay-element-breakdown"
+    ],
+    "kind": "art",
+    "task": "只调用 screenplay-element-breakdown 及逐场提取规则直接从原稿提取全部集数的美术元素。用户明确覆盖技能默认先调用分集处理的步骤：禁止先调用 screenplay-episode-processor，禁止先生成分集 PDF/Word。直接生成六 Sheet 美术元素统计 Excel，无需确认。"
+  }
+}

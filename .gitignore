@@ -1,0 +1,9 @@
+state/
+downloads/
+*.log
+__pycache__/
+
+*.sqlite
+*.db
+*.pyc
+.env
